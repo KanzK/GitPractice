@@ -7,7 +7,7 @@ public class Reverser
 	{
 		System.out.println("Type your name:");
 		Scanner input = new Scanner(System.in);
-		String name = input.toString();
+		String name = input.nextLine();// changed from toString() to nextLine()
 		System.out.println(reverse(name));
 		
 	}
@@ -20,7 +20,7 @@ public class Reverser
 	public static String reverse(String str)
 	{
 		String ans = " ";
-		for (int i = str.length(); i > 0; i--)
+		for (int i = str.length()-1; i > 0; i--)//changed str.length() to str.length()-1
 		{
 			ans += str.charAt(i);
 		}
