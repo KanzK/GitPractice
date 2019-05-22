@@ -5,10 +5,10 @@ public class Reverser
 
 	public static void main (String[] args)
 	{
-		System.out.println("Type your name:");
-		Scanner input = new Scanner(System.in);
+		System.out.println("Type your name: ");
+		Scanner input = new Scanner(System.out);
 		String name = input.nextLine();// changed from toString() to nextLine()
-		System.out.println(reverse(name));
+		System.out.println(reverse(args));
 		
 	}
 	
